@@ -1,12 +1,12 @@
-# Tutaj pisz swój kod, młody padawanie ;-)
+# Enter your code here, young paddock ;-)
 print(2+2.0)
-#obliczenia trudniejsze
+# more difficult calculations
 print(3*15*99/121+3)
-#łączenie stringów
+# combining strings
 print("Grzegorz"+"Biskup")
-#ze spacją
+# with whitespace
 print("Mam " + "Psa")
-#mnożenie napisów
+# string multiplication
 print("HA"*3)
-#tylko liczby całkowite
+# only integers
 print("HA"*2.5) #error
