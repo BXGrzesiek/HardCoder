@@ -1,18 +1,26 @@
-#dataTypes
-#print(1+"'st module")
-#error unsupported operand type(s) for +: 'int' and 'str'ing
-#rzutowanie int -> string
+# dataTypes
+
+# print(1+"'st module")
+# error unsupported operand type(s) for +: 'int' and 'string
+
+# casting int -> string
 print(str(1) + "'st module")
-#rzutowanie string -> int
 
-#dzwonek
-print("\a Czesc BXGrzesiek")
+# casting string -> int
+print(type(int("1")))
 
-#druk backslash'a
+# ding-dong
+print("\a Hi \t BXGrzesiek")
+
+# print a backslash
 print("\t\\BXGrzesiek\\")
-#combo
-print("My favourite cars are \\\"Subaru Impreza\" & \"Nissan Skyline R34 GT-R\\\"")
 
-#dwa printy bez przejścia do nowej linii
+# two print()'s in the same line
 print("NISSAN", end="")
 print(" SKYLINE")
+
+#combo
+print("My favourite cars are \"", end="")
+print("Subaru Impreza HawkEye STI\" ", end="")
+print("& ", end="")
+print("/==Nissan Skyline R34 GT-R==\\")
