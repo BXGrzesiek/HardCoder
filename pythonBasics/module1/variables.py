@@ -1,20 +1,30 @@
-#variables - boxes for datas
+# variables - boxes for datas
 #    print("Put your name here: ")
 #    user_name=input()
 #    print("How old are you? ")
 #    user_age=input()
 #    print("Hi, " + user_name + "(" + user_age + ")")
-
-#keyword list
+# keyword list
 #    import keyword
 #    print(keyword.kwlist)
 
-#ex1 0.5*((a+b)*h)
-print("Program liczący pole trapezu.\nPodaj długość A: ")
-a=input()
-print("Podaj długość B: ")
-b=input()
-print("Podaj długość H: ")
-h=input()
-print("Pole trapezu to: ")
-print(((int(a)+int(b))*int(h))/2)
+print("Interactive script - CALCULUS")
+repeat = 'Y'
+while(repeat == 'Y' or repeat == 'y'):
+    print("[1]\tCalculate the trapezoid area: ")
+    choice = int(input('Provide 1 : '))
+    if int(choice) == 1:
+        print("Program for counting the trapezoid field.\nBase length A: ")
+        a = input()
+        print("Base length B: ")
+        b = input()
+        print("Height: ")
+        h = input()
+        print("Result of AREA=(H*(A+B))/2 is: ")
+        print(((int(a)+int(b))*int(h))/2)
+    # elif (int(choice) == 2):
+
+    else:
+        print("Wrong answer!")
+    rep = str(input("You want to repeat? [Y/n]"))
+print('End of script!')
