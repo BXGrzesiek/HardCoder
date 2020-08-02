@@ -1,5 +1,8 @@
 from math import pi
 
+
+# -----------FUNCTIONS-------------- #
+
 def circle(r):
     if r <= 0:
         return "Invalid Data\nDataValidationFailed - radius must be positive!\n\n"
@@ -43,16 +46,23 @@ def calculator(choice):
     else:
         print('We are here \t--> nowhere ;) \n\t\t--> try again')
 
-# script / program initiation
+
+# -----------VARIABLES-------------- #
+
 figures = ['circle', 'triangle', 'rectangle', 'square']
 repeat = 'y'
+
+
+# -----------BODY------------------- #
+
 while repeat == 'y' or repeat == 'Y':
     try:
-        print('CALCULATOR v1.0.1\n\n\tOption list: ')
+        print('CALCULATOR v1.0.2\n\n\tOption list: ')
         for figure in figures[:3]:
             print('\t' + str(figures.index(figure)+1) + ': ' + figure)
         choice = int(input('Provide figure name [1|2|3]: '))
         calculator(int(choice))
+        repeat = input('You want to try again? [Y/n]')
     except ValueError:
         print('Value Error! \tPlease provide correct data!')
         repeat = input('You want to try again? [Y/n]')
